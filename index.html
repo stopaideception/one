@@ -110,16 +110,15 @@
             const scrolled = window.pageYOffset;
             const windowHeight = window.innerHeight;
             
-            // Определяем этапы анимации
-            // Каждый блок получает 2 экрана для полного подъема
+            // Определяем этапы анимации с паузами между блоками
             const stage1Start = 0;
-            const stage1End = windowHeight * 2;
+            const stage1End = windowHeight * 1.8;
             
-            const stage2Start = stage1End;
-            const stage2End = stage2Start + windowHeight * 2;
+            const stage2Start = windowHeight * 2.2; // Добавляем паузу
+            const stage2End = windowHeight * 4;
             
-            const stage3Start = stage2End;
-            const stage3End = stage3Start + windowHeight * 2;
+            const stage3Start = windowHeight * 4.4; // Добавляем паузу  
+            const stage3End = windowHeight * 6;
             
             const block1 = document.querySelector('.block-1');
             const block2 = document.querySelector('.block-2');
